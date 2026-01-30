@@ -10,30 +10,37 @@
     <div id="main-page">
         <header id="header">
             <div id="header-top-row">
-                <div class="header" id="search-icon"><img src="" alt="">img</div>
-                <input class="header" id="search" type="search">
-                <div class="header" id="notifications"></div>
-                <div class="header" id="top-row-user-icon"></div>
-                <div class="header" id="user-name">Morgan Oakley</div>
+                <div id="search">
+                    <div class="header" id="search-icon"><img src="images/database-search.svg" alt="Search icon" style="width:24px;height:24px"> </div>
+                    <input class="header" id="search-bar" type="search">
+                </div>
+                <div id="user-nav">
+                    <div id="notifications"><img src="images/bell-ring.svg" alt="Notifications icon" style="width:24px;height:24px"></div>
+                    <div id="user-icon"><img src="images/wild-boar-svgrepo-com.svg" style="width:60px;height:60px"></div>
+                    <div class="header" id="user-name">Morgan Oakley</div>
+                </div>
             </div>
             <div id="header-bottom-row">
-                <div id="bottom-row-user-icon"></div>
-                <div id="greeting-username">
-                    <div id="bottom-row-greeting">Hi there,</div>
-                    <div id="bottom-row-username">Morgan Oakley (@morgan)</div>
+                <div id="user-greeting">
+                    <div id="bottom-row-user-icon"><img src="images/wild-boar-svgrepo-com.svg" alt="" style="width:90px;height:90px"></div>
+                    <div id="greeting-username">
+                        <div id="bottom-row-greeting">Hi there,</div>
+                        <div id="bottom-row-username">Morgan Oakley (@morgan)</div>
+                    </div>
                 </div>
-                <button class="header-button" id="new">New</button>
-                <button class="header-button" id="upload">Upload</button>
-                <button class="header-button" id="share">Share</button>
+                <div id="user-buttons">
+                    <button class="header-button" id="new">New</button>
+                    <button class="header-button" id="upload">Upload</button>
+                    <button class="header-button" id="share">Share</button>
+                </div>
             </div>
         </header>
         <div id="sidebar">
             <div id="sidebar-top">
-                <div id="sidebar-icon"></div>
-                <div id="dashboard">Dashboard</div>
+                <img src="images/pig-variant.svg" alt="Pig icon - Dashboard" style="width:36px;height:36px"><p>TRUFFLE</p>
             </div>
             <div id="sidebar-navigation">
-                <div id="home"><a><img src="images/home-variant-outline.svg" alt="Home icon" style="width:24px;height:24px">Home</a></div>
+                <a><img src="images/home-variant-outline.svg" alt="Home icon" style="width:24px;height:24px">Home</a>
                 <a><img src="images/account-circle-outline.svg" alt="Profile icon" style="width:24px;height:24px">Profile</a>
                 <a><img src="images/chat-question-outline.svg" alt="Messages icon" style="width:24px;height:24px">Messages</a>
                 <a><img src="images/history.svg" alt="History icon" style="width:24px;height:24px">History</a>

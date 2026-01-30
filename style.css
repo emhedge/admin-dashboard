@@ -1,0 +1,215 @@
+:root {
+    --evergreen: #0B1B10ff;
+    --alice-blue: #E5EEF5ff;
+    --charcoal-brown: #1C2415ff;
+    --cool-steel: #8DA1AAff;
+    --soft-fawn: #C8A97Bff;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-VariableFont_wdth\,wght.woff2);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif, system-ui;
+}
+
+#main-page {
+    height: 100vh;
+    /* width: 100%; */
+    
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main-content";
+}
+
+#header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-area: header;
+    gap: 70px;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: var(--alice-blue);
+}
+
+#header-top-row {
+    display: grid;
+    grid-template-columns: 1fr 10fr 2fr 2fr 2fr;
+    grid-auto-flow: column;
+    padding: 20px 0 0 20px;
+}
+
+
+
+input#search {
+    width: 80%;
+}
+
+#header-bottom-row {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0 0 20px 20px;
+    gap: 50px;
+    align-items: center;
+    justify-items: start;
+}
+
+#bottom-row-greeting {
+    font-size: 0.9rem;
+}
+
+#bottom-row-username {
+    font-size: 1.6rem;
+}
+
+ .header-button {
+    font-size: 1em;
+    height: 3em;
+    width: 100px;
+    border-radius: 40px;
+    border-style: none;
+    background-color: rgb(48, 136, 171);
+    color: white;
+    font-weight: bold;
+ }
+
+#sidebar {
+    display: grid;
+    grid-template-rows: 1fr 7fr 10fr;
+    grid-area: sidebar;
+    gap: 50px;
+    border: 1px solid black;
+    padding: 20px 0 0 20px;
+    font-weight: bold;
+    background-color: var(--charcoal-brown);
+    color: white;
+}
+
+#sidebar-top {
+    display: grid;
+    height: min-content;
+    /* align-self: center; */
+    font-size: 1.6em;
+    
+}
+
+#sidebar-navigation {
+    display: grid;
+    height: min-content;
+    gap: 30px;
+    font-size: 1.4em;
+}
+
+#sidebar-branding  {
+    display: grid;
+    height: min-content;
+    gap: 30px;
+    font-size: 1.4em;
+}
+
+/* #sidebar > div > img {
+    display: inline-block;
+    vertical-align: middle;
+    
+/* } */
+
+#sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+#main-content {
+    display: grid;
+    grid-area: main-content;
+    border: 1px solid black;
+    height: 100%;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+    background-color: var(--cool-steel);
+}
+
+#projects {
+    grid-area: projects;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    padding: 20px 20px 80px 20px;
+
+}
+
+#project-title,
+#announcements-title,
+#trending-title {
+    font-size: 1.4em;
+    color: white;
+    
+}
+
+#project-cards {
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 1em;
+}
+
+.project-card {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 0.8;
+}
+
+#announcements {
+    grid-area: announcements;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+
+    border: 1px solid black;
+    padding: 20px 20px 60px 20px;
+}
+
+#announcements-card {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+#trending {
+    grid-area: trending;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+
+    border: 1px solid black;
+    padding: 20px 20px 80px 20px;
+}
+
+#trending-title {
+
+}
+
+#trending-card {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 1em;
+}

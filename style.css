@@ -232,7 +232,7 @@ input#search-bar:focus {
 }
 
 #sidebar {
-    grid-template-rows: 1fr 7fr 10fr;
+    grid-template-rows: 1fr 1fr 7fr 10fr;
     grid-area: sidebar;
     padding: 35px 0 0 20px;
     background-color: var(--charcoal-brown);
@@ -246,6 +246,13 @@ input#search-bar:focus {
 
 #sidebar-top {
     font-size: 1.6em;
+}
+
+#sidebar-intro p {
+    font-weight: normal;
+    text-wrap: stable;
+    padding-right: 20px;
+    font-size: 0.85em;
 }
 
 #sidebar-navigation {

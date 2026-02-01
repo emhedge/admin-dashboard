@@ -78,7 +78,7 @@ input#search-bar {
     height: 2.2em;
     border: 2px var(--soft-fawn) solid; 
     border-radius: 20px;
-    background-color: var(--soft-fawn);
+    background-color: var(--alice-blue);
     padding-left:15px;
 }
 
@@ -180,6 +180,9 @@ input#search-bar:focus {
     display: grid;
     grid-template-rows: 1fr 7fr 10fr;
     grid-area: sidebar;
+    /* update sidebar to have minmax() */
+    min-width: 200px;
+    /* max-width: 255px; */
     gap: 30px;
     padding: 35px 0 0 20px;
     font-weight: 500;
@@ -222,7 +225,7 @@ input#search-bar:focus {
 #sidebar a::before {
   content: '';
   position: absolute;
-  width: 93%;
+  width: 92%;
   height: 2px;
   background: linear-gradient(to right, var(--soft-fawn), var(--alice-blue));
   bottom: -8px;
@@ -268,7 +271,7 @@ input#search-bar:focus {
     grid-area: projects;
     display: grid;
     grid-template-rows: 30px 1fr;
-    padding: 20px 20px 80px 20px;
+    padding: 20px 15px 80px 30px;
 
 }
 
@@ -408,7 +411,7 @@ p {
     display: grid;
     grid-template-rows: 30px 1fr;
     align-items: center;
-    padding: 20px 20px 60px 20px;
+    padding: 20px 30px 60px 15px;
 }
 
 #trending {
@@ -416,7 +419,7 @@ p {
     display: grid;
     grid-template-rows: 30px 1fr;
     align-items: center;
-    padding: 20px 20px 80px 20px;
+    padding: 20px 30px 80px 15px;
 }
 
 #announcements-card,
@@ -458,6 +461,7 @@ p {
     display: flex;
     justify-content: left;
     align-items: center;
+    gap: 16px
 }
 
 
@@ -476,6 +480,9 @@ p {
 
 .trending-icon img {
     transform: translateY(4px);
+    background-color: white;
+    border: 0.5px white solid;
+    border-radius: 150px;
 }
 
 .trending-text p:nth-child(1) {
@@ -492,8 +499,3 @@ hr {
     border-style: inset;
     border: 0.5px solid var(--evergreen);
 }
-
-
-
-
-
